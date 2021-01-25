@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+    <div class="container">
+         <div class="caixa">
+            <div class="titulo">
+                <img src="images/login.png" alt="">
+                <h3> LOGIN </h3>
+            </div>
+            <div class="credenciais">
+                <label> Email </label>
+                <input type="email" name="email" placeholder="Digite seu email"required>
+
+                <label> Password </label>
+                <input type="password" name="password" placeholder="Digite seu password"required>
+            </div>
+
+            <div class="btns">
+                <p class="lemb">
+                    <label><input checked="checked" type="checkbox"/> Lembre-me</label>
+                </p>
+                <button type="submit" class="registrar" onclick="window.open('registrar.html','_self')">Registrar</button>
+                <button type="submit" class="esqueceu">Esqueceu o password?</button>
+                
+            </div>               
+            <div class="btns-login">
+                <button type="submit" id="login" value="" onclick="window.open('index.html','_self')"> Iniciar Sessão</button>
+            </div>
+        </div>
+        <div class="b-title">
+            <h1> ORRIE </h1>
+            <p>Online Restaurant Reviews</p>
+        </div>
+    </div>
+    <script type="text/javascript"> </script>  
+</body>
+</html>

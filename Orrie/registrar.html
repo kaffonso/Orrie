@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+
+    <link rel="stylesheet" href="css/registrar.css">
+</head>
+<body>
+    <div class="conteiner">
+       
+        <div class="caixa">
+            <div class="titulo">
+                <h3>REGISTRAR</h3>
+            </div>
+            <div class="credenciais">
+                <label> Nome </label>
+                <input type="nome" name="nome" placeholder="Nome"required> 
+                <label> Apelido </label>
+                <input type="nome" name="nome" placeholder="Apelido"required>
+                <label> Morada </label>
+                <input type="nome" name="nome" placeholder="Morada"required>
+                <label> Data de Nascimento </label>
+                <input type="date" name="Data" placeholder="dd/mm/aaaa"required>
+                <label> Email </label>
+                <input type="email" name="email" placeholder="Email"required>
+                <label> Password </label>
+                <input type="password" name="senha" placeholder="Password"required>
+                <label> Repita o Password </label>
+                <input type="password" name="senha" placeholder="Password"required>
+            </div>
+            <p>Ao criar uma conta, você concorda com nossos <a href="#"> Termos e Privacidade. </a></p> 
+            <div class="btns">
+                <button type="submit" class="voltar" onclick="window.open('login.html','_self');">Voltar</button>
+                <button type="submit" class="registrar" onclick="alert('Registro feito com sucesso!'); window.open('login.html','_self')">Registrar</button>  
+            </div>
+        </div>
+        <div class="b-title">
+            <h1> ORRIE </h1>
+            <p>Online Restaurant Reviews</p>
+        </div>
+    </div>
+</body>
+</html>
