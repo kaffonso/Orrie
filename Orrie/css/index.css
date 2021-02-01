@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	font-family: futura;
 	line-height: 1.5;
-	background-color: rgb(150,5,3); }
+	background-color:white; }
 
 nav{ 
 	background-image:url(/Users/kafonso/Desktop/Orrie/images/nave.jpg);
@@ -56,18 +56,20 @@ nav{
 		letter-spacing: 0.1px; }
 
 .search{
+	background-image: url(/Users/kafonso/Desktop/Orrie/images/search.jpg);
+	background-repeat: no-repeat;
 	text-align: center;
 	width: 100%;
 	color: white;
 	overflow: none;
 	font-family: futura;
-	padding-bottom: 50px;
+	padding-bottom: 65px;
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.1);}
 
 	.search h1{
 		letter-spacing: 3px;
 		font-size: 3em;
-		padding-top: 115px; }
+		padding-top: 95px; }
 
 	.searchbox input, button{
 		margin: 0px;
@@ -89,12 +91,11 @@ nav{
 		font-size: 14px; }
 
 .destaques{
-	color: white;;
+	color:grey;
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 73px;
-	text-align: center;
-	background-color:#f4b86;}
+	text-align: center; }
 
 	.destaques h2{
 		letter-spacing: 10px;
@@ -113,9 +114,10 @@ nav{
 		.dest-box .box > a > p{
 		font-size: 18px;
 		font-weight: bold;
-		color: white; }
+		color:grey }
 
 		.dest-box img{
+   		 	box-shadow: 0.5px 0.5px 25px grey;
 			width: 200px;
 			height: 200px;
 			border-radius: 50%;
