@@ -16,13 +16,13 @@
 			</div>
 
 			<div class="menu">
-				<a href="index.html"> Home </a>
+				<a href="index.html" class="active"> Home </a>
 				<a href=""> Conta </a>
-				<a href=""> Definições </a>
+				<a href="definition.html"> Definições </a>
 				<a href="login.html" onclick="confirm('Sair?')"> Sair </a>
 			</div>
 		</nav> 
-
+		
 		<div class="search"> 
 			<h1> PROCURAR RESTAURANTES </h1>
 
@@ -31,7 +31,6 @@
 				<button> Procurar </button>
 			</div>
 		</div>
-
 		<div class="destaques">
 
 			<h2> DESTAQUES </h2>
@@ -41,23 +40,17 @@
 					<a href="d_geral.html"> 
 						<p>Mindel Hotel</p> 
 						<img src="images/Restaurantes/mindel.jpg">
-						<p class="rate">Rate 4/5</p> 
+						<p class="rate">Rate 5/5</p> 
 					</a>			
 				</div>
 				<div class="box">
 					<a href="#"> 
 						<p>Martini Sunset</p> 
 						<img src="images/Restaurantes/martini.jpg">
-						<p class="rate">Rate 4/5</p> 
+						<p class="rate">Rate 3.2/5</p> 
 					</a>			
 				</div>
-				<div class="box">
-					<a href="#"> 
-						<p> Caravela</p> 
-						<img src="images/Restaurantes/caravela.jpg">
-						<p class="rate">Rate 4/5</p> 
-					</a>			
-				</div>
+
 				<div class="box">
 					<a href="#"> 
 						<p> Usabor </p> 
@@ -65,11 +58,20 @@
 						<p class="rate">Rate 4/5</p> 
 					</a>			
 				</div>
+
+				<div class="box">
+					<a href="#"> 
+						<p> Caravela</p> 
+						<img src="images/Restaurantes/caravela.jpg">
+						<p class="rate">Rate 3.5/5</p> 
+					</a>			
+				</div>
+				
 				<div class="box">
 					<a href="#"> 
 						<p> Pizza Art </p> 
 						<img src="images/Restaurantes/pizzart.jpg">
-						<p class="rate">Rate 4/5</p> 
+						<p class="rate">Rate 4.3/5</p> 
 					</a>			
 				</div>
 			</div>
@@ -93,9 +95,14 @@
 	<script type="text/javascript">
 		function openPage(){
 			var x = document.getElementById("search").value;
+			x = x.toLowerCase();
 
 			if (x === "mindel") {
-				window.open("d_geral.html");
+				window.open("search.html","_self");
+
+			}else{
+				alert("Restaurante não encontrado!")
+				window.open("index.html","_self");
 			};
 		};
 	</script>
