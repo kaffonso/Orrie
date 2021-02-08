@@ -19,24 +19,24 @@
             </div>
             <div class="credenciais">
                 <label> Nome </label>
-                <input type="nome" name="nome" placeholder="Nome"required> 
+                <input id="name" type="text" name="name" placeholder="Nome"required> 
                 <label> Apelido </label>
-                <input type="nome" name="nome" placeholder="Apelido"required>
+                <input id="lname" type="text" name="lname" placeholder="Apelido"required>
                 <label> Morada </label>
-                <input type="nome" name="nome" placeholder="Morada"required>
+                <input id="place" type="text" name="place" placeholder="Morada"required>
                 <label> Data de Nascimento </label>
-                <input type="text" id="datepicker" placeholder="dd/mm/aaaa" required>
+                <input id="data" type="date"  placeholder="dd/mm/aaaa" required>
                 <label> Email </label>
                 <input type="email" name="email" placeholder="Email"required>
                 <label> Password </label>
-                <input type="password" name="senha" placeholder="Password"required>
+                <input id="senha1" type="password" name="senha" placeholder="Password"required onfocus="this.value=''">
                 <label> Repita o Password </label>
-                <input type="password" name="senha" placeholder="Password"required>
+                <input id="senha2" type="password" name="senha" placeholder="Password"required onfocus="this.value=''">
             </div>
             <p>Ao criar uma conta, você concorda com nossos <a href="#"> Termos e Privacidade. </a></p> 
             <div class="btns">
                 <button type="submit" class="voltar" onclick="window.open('login.html','_self');">Voltar</button>
-                <button type="submit" class="registrar" onclick="alert('Registro feito com sucesso!'); window.open('login.html','_self')">Registrar</button>  
+                <button type="submit" class="registrar" onclick="verificar()"> Registrar</button>  
             </div>
         </div>
         <div class="b-title">
@@ -45,9 +45,26 @@
         </div>
     </div>
     <script>
-        $( function() {
-          $( "#datepicker" ).datepicker();
-        } );
-  </script>
+        function verificar(){
+            var psw = document.getElementById("senha1").value;
+            var pswc = document.getElementById("senha2").value;
+            var n = document.getElementById("name").value;
+            var ln = document.getElementById("lname").value;
+            var place = document.getElementById("place").value;
+            var data = document.getElementById("data").value;
+
+            if(n === "" || ln === "" || place === "" || data === ""){
+                alert('Por favor preencha todos os campos!')
+                return 0;
+            }
+
+            if (psw === pswc){
+                alert('Registro feito com sucesso!')
+                window.open("login.html","_self");
+            } else {
+                alert('Senhas diferentes');
+            }
+        }
+    </script>
 </body>
 </html>

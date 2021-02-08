@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title> Orrie </title>
 	<link rel="stylesheet" type="text/css" href="css/search.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
@@ -11,9 +10,9 @@
 
 	<div class="conteiner">
 		<nav class="nav">
-			<div class="logo">
-				<p class="Head"> Orrie </p>
-				<p class="subHead"> Online Restaurant Review</p>
+			<div id="logo">
+				<div id="Head"> Orrie </div>
+				<div id="subHead"> Online Restaurant Review</div>
 			</div>
 
 			<div class="menu">
@@ -28,14 +27,14 @@
 			<h1> PROCURAR RESTAURANTES </h1>
 
 			<div class="searchbox">
-				<input type="search" name="procurar" placeholder="Procure um restaurante..." value="" id="search" onchange="openPage()" onfocus="this.value=''">
-				<button> Procurar </button>
+				<input type="search" name="procurar" placeholder="Procure um restaurante ou uma localização..." value="" id="search" onchange="search()" onfocus="this.value=''">
+				<button onclick="funtion()"> Procurar </button>
 			</div>
 		</div>
 
-		<div class="result">
+		<div id="result">
 		<h2 id="resultado"> Resultado correspondente a 'mindel'</h2>
-		<hr>
+		<hr id="line1">
 			<div class="result1" id="y">
 				<a href="d_geral.html"> 
 					<img id="i_atual" src="images/restaurantes/mindel.jpg"> 
@@ -43,7 +42,7 @@
 				</a>
 				<a href="d_geral.html"> 
 					<p id="n_atual">Mindel Hotel</p> 
-					<p id="l_atual">Localização: Mindelo</p>
+					<p id="l_atual">Localização:  Avenida Marginal</p>
 					<div class="icons">
 						<i id="s1" class="fas fa-star"></i>
 						<i id="s2" class="fas fa-star"></i>
@@ -56,16 +55,38 @@
 					<p id="r_atual">Rate 4/5</p>
 				</a>	
 			</div>
-		<hr>
-		<h2>Restaurantes relacionados </h2>
+			<hr>
+			<div class="result1" id="x">
+			
+				<a href="d_geral.html"> 
+					<img id="i_next" src="images/restaurantes/mindel.jpg"> 
+
+				</a>
+				<a href="d_geral.html"> 
+					<p id="n_next"></p> 
+					<p id="l_next"></p>
+					<div class="icons">
+						<i id="sn1" class="fas fa-star"></i>
+						<i id="sn2" class="fas fa-star"></i>
+						<i id="sn3" class="fas fa-star"></i>
+						<i id="sn4" class="fas fa-star"></i>
+						<i id="sn5" class="far fa-star"></i>
+						<span id="totaln"> (244)</span>
+					</div>
+					
+					<p id="r_next"></p>
+				</a>	
+			</div> 
+		<hr id="line2" style="display: none;">
+		<h2>Outros restaurantes </h2>
 			<div class="outros"> 
-			<div class="outros1">
+			<div id="outros1">
 				<a href="d_geral.html"> 
 					<img src="images/restaurantes/pizzart.jpg"> 
 				</a>
 				<a href="d_geral.html"> 
-					<p>Pizza Art</p> 
-					<p>Localização: Mindelo</p>
+					<div>Pizza Art</div> 
+					<div>Localização: Chã de Alecrim</div>
 					<div class="icons">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -77,13 +98,13 @@
 					<p>Rate 5/5</p>
 				</a>	
 			</div>
-			<div class="outros1">
+			<div id="outros1">
 				<a href="d_geral.html"> 
 					<img src="images/restaurantes/caravela.jpg"> 
 				</a>
 				<a href="d_geral.html"> 
 					<p>Caravela</p> 
-					<p>Localização: Mindelo</p>
+					<p>Localização: Laginha</p>
 					<div class="icons">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -95,13 +116,13 @@
 					<p>Rate 3/5</p>
 				</a>	
 			</div>
-			<div class="outros1">
+			<div id="outros1">
 				<a href="d_geral.html"> 
 					<img src="images/restaurantes/martini.jpg"> 
 				</a>
 				<a href="d_geral.html"> 
 					<p>Martini Sunset</p> 
-					<p>Localização: Mindelo</p>
+					<p>Localização: Santa Filomena</p>
 					<div class="icons">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -110,16 +131,17 @@
 						<i class="far fa-star"></i>
 						<span> (123)</span>
 					</div>
-					<p>Rate 2/5</p>
+					<p>Rate 4.5/5</p>
 				</a>	
 			</div>
-			<div class="outros1">
+			<div id="outros1">
 				<a href="d_geral.html"> 
 					<img src="images/restaurantes/mindel.jpg"> 
 				</a>
 				<a href="d_geral.html"> 
 					<p>Mindel Hotel</p> 
-					<p>Localização: Mindelo</p><div class="icons">
+					<p>Localização: Avenida Marginal</p>
+					<div class="icons">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -130,13 +152,13 @@
 					<p>Rate 3.4/5</p>
 				</a>	
 			</div>
-			<div class="outros1">
+			<div id="outros1">
 				<a href="d_geral.html"> 
 					<img src="images/restaurantes/usabor.jpg"> 
 				</a>
 				<a href="d_geral.html"> 
 					<p>U Sabor</p> 
-					<p>Localização: Mindelo</p>
+					<p>Localização: Laginha</p>
 					<div class="icons">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -164,41 +186,99 @@
 		</footer>
 	</div>
     
-    <script src="jquery-3.5.1.min.js">
-      
-    </script>
+    <script src="jquery-3.5.1.min.js"></script>
 	<script type="text/javascript">
-		function openPage(){
+		function funtion(){
+    		document.result.scrollTop = 0;}
+		function search(){
 			var x = document.getElementById("search").value;
 			x = x.toLowerCase();
-
 			document.getElementById("resultado").innerHTML= "Resultado correspondente a " + "'" + x + "'";
 
-			if (x === "mindel" || x==="mindel hotel" || x === "hotel"){
-				document.getElementById("y").style.visibility = "visible"
-				document.getElementById("n_atual").innerHTML= "Mindel Hotel";
-				document.getElementById("l_atual").innerHTML= "Localização: Mindelo";
-				document.getElementById("r_atual").innerHTML= "Rate 4/5";
-				document.getElementById("i_atual").src="images/restaurantes/mindel.jpg";
+			if (x === "m"){
+				document.getElementById("x").style.display = "flex"
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "flex"
 
-			}else if (x === "caravela") {
-				document.getElementById("y").style.visibility = "visible"
+				document.getElementById("n_atual").innerHTML= "Martini Sunset";
+				document.getElementById("l_atual").innerHTML= "Localização: Santa Filomena";
+				document.getElementById("r_atual").innerHTML= "Rate 4.5/5";
+				document.getElementById("s4").className="fas fa-star";
+				document.getElementById("s5").className="fas fa-star-half-alt";
+				document.getElementById("i_atual").src="images/restaurantes/martini.jpg";
+
+				document.getElementById("n_next").innerHTML= "Mindel Hotel";
+				document.getElementById("l_next").innerHTML= "Localização: Avenida Marginal";
+				document.getElementById("r_next").innerHTML= "Rate 4/5";
+				document.getElementById("i_next").src="images/restaurantes/mindel.jpg";
+
+			}else if (x === "laginha"){
+				document.getElementById("x").style.display = "flex"
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "flex"
+
 				document.getElementById("n_atual").innerHTML= "Caravela";
 				document.getElementById("l_atual").innerHTML= "Localização: Laginha";
 				document.getElementById("r_atual").innerHTML= "Rate 4.2/5";
+				document.getElementById("s1").className="fas fa-star"
+				document.getElementById("s2").className="fas fa-star"
+				document.getElementById("s3").className="fas fa-star"
+				document.getElementById("s4").className="fas fa-star"
 				document.getElementById("s5").className="fas fa-star-half-alt"
 				document.getElementById("i_atual").src="images/restaurantes/caravela.jpg";
 
-			}else if (x === "pizza" || x==="pizzart" || x==="pizza art"){
-				document.getElementById("y").style.visibility = "visible"
+				document.getElementById("n_next").innerHTML= "U Sabor";
+				document.getElementById("l_next").innerHTML= "Localização: Laginha";
+				document.getElementById("r_next").innerHTML= "Rate 4.3/5";
+				document.getElementById("i_next").src="images/restaurantes/usabor.jpg";
+
+			} else if (x === "mindel" || x==="mindel hotel" || x === "hotel" ||  x==="m" || x === "avenida marginal" || x === "marginal" || x === "avenida"){
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("x").style.display = "none"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "none"
+
+				document.getElementById("n_atual").innerHTML= "Mindel Hotel";
+				document.getElementById("l_atual").innerHTML= "Localização: Avenida Marginal";
+				document.getElementById("r_atual").innerHTML= "Rate 4/5";
+				document.getElementById("i_atual").src="images/restaurantes/mindel.jpg";
+
+			}else if (x === "caravela" || x === "c") {
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("x").style.display = "none"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "none"
+
+				document.getElementById("n_atual").innerHTML= "Caravela";
+				document.getElementById("l_atual").innerHTML= "Localização: Laginha";
+				document.getElementById("r_atual").innerHTML= "Rate 4.2/5";
+				document.getElementById("s1").className="fas fa-star"
+				document.getElementById("s2").className="fas fa-star"
+				document.getElementById("s3").className="fas fa-star"
+				document.getElementById("s4").className="fas fa-star"
+				document.getElementById("s5").className="fas fa-star-half-alt"
+				document.getElementById("i_atual").src="images/restaurantes/caravela.jpg";
+
+			}else if (x === "pizza" || x==="pizzart" || x==="pizza art" || x==="p" || x === "cha de alerim" || x === "chã de alecrim" || x === "alecrim"|| x === "cha"){
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("x").style.display = "none"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "none"
+
 				document.getElementById("n_atual").innerHTML= "Pizza Art";
 				document.getElementById("l_atual").innerHTML= "Localização: Chã de Alecrim";
 				document.getElementById("r_atual").innerHTML= "Rate 3/5";
 				document.getElementById("s4").className="far fa-star"
 				document.getElementById("i_atual").src="images/restaurantes/pizzart.jpg";
 
-			}else if(x === "martini" || x==="martini sunset" || x==="sunset"){
-				document.getElementById("y").style.visibility = "visible"
+			}else if(x === "martini" || x==="martini sunset" || x === "sunset" || x === "santa filomena"|| x === "santa" || x === "filomena") {
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("x").style.display = "none"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "none"
+
 				document.getElementById("n_atual").innerHTML= "Martini Sunset";
 				document.getElementById("l_atual").innerHTML= "Localização: Santa Filomena";
 				document.getElementById("r_atual").innerHTML= "Rate 4.5/5";
@@ -206,16 +286,25 @@
 				document.getElementById("s5").className="fas fa-star-half-alt"
 				document.getElementById("i_atual").src="images/restaurantes/martini.jpg";
 
-			}else if(x === "usabor" || x==="u sabor" || x==="sabor"){
-				document.getElementById("y").style.visibility = "visible"
+			}else if(x === "usabor" || x==="u sabor" || x==="sabor" ||  x==="u"){
+				document.getElementById("y").style.display = "flex"
+				document.getElementById("x").style.display = "none"
+				document.getElementById("line1").style.display = "flex"
+				document.getElementById("line2").style.display = "none"
+
 				document.getElementById("n_atual").innerHTML= "U Sabor";
 				document.getElementById("l_atual").innerHTML= "Localização: Laginha";
 				document.getElementById("r_atual").innerHTML= "Rate 4.3/5";
 				document.getElementById("i_atual").src="images/restaurantes/usabor.jpg";
+
 			}else {
-				document.getElementById("resultado").innerHTML= "Resultado correspondente a " + "'" + x + "'" + " não existe";
-				document.getElementById("y").style.visibility = "hidden"
+				document.getElementById("resultado").innerHTML= "Resultado correspondente a " + "'" + x + "'" + " não existe!";
+				document.getElementById("y").style.display = "none"
+				document.getElementById("x").style.display = "none"
+				document.getElementById("line1").style.display = "none"
+				document.getElementById("line2").style.display = "none"
 			}
+
 		};
 	</script>
 </body>
