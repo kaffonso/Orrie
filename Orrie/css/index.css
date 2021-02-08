@@ -61,7 +61,7 @@ body{
 		letter-spacing: 0.1px; }
 
 .search{
-	background-image: url(/Users/kafonso/Desktop/Orrie/images/bg.png);
+	background-image: url("/images/bg.png");
 	text-align: center;
 	width: 100%;
 	overflow: scroll;
@@ -150,7 +150,7 @@ body{
 
 footer{
 	text-align: center;
-	background-image: url(/Users/kafonso/Desktop/Orrie/images/bg.png);
+	background-image: url("/images/bg.png");
 	background-position:center;
 	color: white; 
 	padding: 40px 0;}
