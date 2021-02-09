@@ -2,16 +2,16 @@ body{
 	margin: 0;
 	font-family: futura;
 	line-height: 1.5;
-	background-color: rgb(150,5,3); }
+	background-color: white; }
 
 nav{ 
-	background-image:url(/Users/kafonso/Desktop/Orrie/images/nave.jpg);
+	background-color: rgba(0, 0, 0, 0.582);
 	color: white; 
 	width: 100%;
 	position: fixed;
 	top: 0px;
-	height: 53px; 
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.1);}
+	height: 53px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);}
 
 	.menu{
 		float: right; }
@@ -25,17 +25,23 @@ nav{
 				padding-top: 14.5px;
 				text-decoration: none;
 				color: white;
-				-webkit-transition:0.8s; }
+				transition:0.8s; }
 
 			.menu a:hover{
 				background-color: rgba(180, 20, 0, 0.48);
-				-webkit-transition: 0.5s; 
+				border-bottom: 3px solid white;
+				padding-top: 12px;
+				transition: 0.5s; 
 				transform: scaleX(1.05);}
 
 			.menu a:last-child{
 				padding-right: 30px; }
+			
+			.active{
+				border-bottom:3px solid white;}
 
 	.logo{
+		cursor:pointer;
 		float: left;
 		padding-left: 15px; 
 		padding-right: 5px;}
@@ -55,8 +61,10 @@ nav{
 		letter-spacing: 0.1px; }
 
 	.titulo{
+		box-shadow: 1px 1px 5px black;
 		color: white;
-		padding-top: 110px;
+		background-image: url("../images/bg.png");
+		padding-top: 100px;
 		padding-left: 50px; 
 		padding-bottom: 5px;}
 
@@ -69,7 +77,10 @@ nav{
 			margin: 0px; }
 
 	.buttons{
+		box-shadow: 1px 1px 5px rgb(128, 122, 122);
 		margin: 0px;
+		margin-top: 10px;
+		background-color: rgb(150,5,3);;
 		padding-bottom: 5px;
 		padding-top: 5px;
 		padding-left: 50px;
@@ -78,23 +89,22 @@ nav{
 		.buttons a{
 			margin-right: 2px;
 			font-size: 18px;
-			border-radius: 20px;
 			padding-right: 135px;
 			padding-left: 135px;
-			padding-bottom: 5px;
-			padding-top: 5px;
-			background-color: white;
+			padding-bottom: 7px;
+			padding-top: 6px;
+			background-color:rgb(150,5,3);;
 			text-decoration: none;
-			color: black;
-			-webkit-transition: 0.5s; }
+			color:white;
+			transition: 0.5s; }
 
 			.buttons a:hover{
-				padding-right: 137px;
-				padding-left: 137px;
-				color: rgb(150,5,3);
-				-webkit-transition: 0.5s;}
+				background-color:rgb(185, 22, 19) ;
+				transition: 0.3s;}
 
-	.content{}
+	.content{
+		width: auto;
+	}
 
 footer{
 	background-color: darkred;
@@ -125,7 +135,7 @@ footer{
 
 		footer .roda li a:hover{
 			color:grey;
-			-webkit-transition: 0.5s; }
+			transition: 0.5s; }
 
 	footer .copyright{
 		margin-top: 10px;

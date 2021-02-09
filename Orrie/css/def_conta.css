@@ -7,7 +7,7 @@ body{
 	background-color: rgb(150,5,3);}
 
 	nav{ 
-		background-image:url(/Users/kafonso/Desktop/Orrie/images/nave.jpg);
+		background-image:url(../images/nave.jpg);
 		color: white; 
 		width: 100%;
 		position: fixed;
@@ -27,17 +27,18 @@ body{
 					padding-top: 14.5px;
 					text-decoration: none;
 					color: white;
-					-webkit-transition:0.8s; }
+					transition:0.8s; }
 	
 					.menu a:hover{
 					background-color: rgba(180, 20, 0, 0.48);
-					-webkit-transition: 0.5s; 
+					transition: 0.5s; 
 					transform: scaleX(1.05)}
 	
 					.menu a:last-child{
 					padding-right: 30px; }
 	
 		.logo{
+			cursor:pointer;
 			float: left;
 			padding-left: 15px; 
 			padding-right: 5px;}

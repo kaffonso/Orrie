@@ -27,11 +27,11 @@ body{
 					padding-top: 12px;
 					text-decoration: none;
 					color: white;
-					-webkit-transition:0.8s; }
+					transition:0.8s; }
 		
 					.menu a:hover{
 					background-color: rgba(0, 20, 0, 0.48);
-					-webkit-transition: 0.1s; 
+					transition: 0.1s; 
 					border-bottom: 3px solid white;
 					transform: scaleX(1.05)}
 
@@ -42,6 +42,7 @@ body{
 					border-bottom:3px solid white;}
 
 	 #logo{
+		cursor:pointer;
 		position: fixed;
 		float: left;
 		padding-left: 15px; 
@@ -62,7 +63,7 @@ body{
 		letter-spacing: 0.1px; }
 
 .search{
-	background-image: url(/images/bg.png);
+	background-image: url(../images/bg.png);
 	text-align: left;
 	width: 100%;
 	top: 0;
@@ -172,7 +173,7 @@ body{
 				width: 150px;
 				height: 150px;
 				box-shadow: 0.5px 0.5px 6px rgb(194, 189, 189); 
-				-webkit-transition: 0.5s}
+				transition: 0.5s}
 
 		#outros1 a, p{
 			text-align: center;
@@ -191,12 +192,12 @@ body{
 	}
 		#outros1 img:hover{
 			transform: scaleX(1.05) scaleY(1.05);
-			-webkit-transition: 0.5s;
+			transition: 0.5s;
 		}
 
 footer{
 	text-align: center;
-	background-image: url(/images/bg.png);
+	background-image: url(../images/bg.png);
 	background-position:center;
 	color: white; 
 	padding: 40px 0;}
@@ -221,7 +222,7 @@ footer{
 
 		footer .roda li a:hover{
 			color:grey;
-			-webkit-transition: 0.5s; }
+			transition: 0.5s; }
 
 	footer .copyright{
 		margin-top: 10px;

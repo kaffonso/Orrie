@@ -41,6 +41,7 @@ nav{
 				border-bottom:3px solid white;}
 
 	.logo{
+		cursor:pointer;
 		float: left;
 		padding-left: 15px; 
 		padding-right: 5px;}
@@ -62,7 +63,7 @@ nav{
 	.titulo{
 		box-shadow: 1px 1px 5px black;
 		color: white;
-		background-image: url("/images/bg.png");
+		background-image: url("../images/bg.png");
 		padding-top: 100px;
 		padding-left: 50px; 
 		padding-bottom: 5px;}
@@ -102,7 +103,7 @@ nav{
 				transition: 0.3s;}
 				
 	.all{
-		background-color: white;
+		background-image:url("../images/bg3.jpg");
 		display: flex;
 		justify-content: left;
 		padding-top: 10px;
