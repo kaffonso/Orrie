@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -19,15 +20,15 @@
             </div>
             <div class="credenciais">
                 <label> Nome </label>
-                <input id="name" type="text" name="name" placeholder="Nome"required> 
+                <input id="name" type="text" name="name" placeholder="Nome" title="Insira o primeiro nome" required> 
                 <label> Apelido </label>
-                <input id="lname" type="text" name="lname" placeholder="Apelido"required>
+                <input id="lname" type="text" name="lname" placeholder="Apelido" title="Insira o apelido" required>
                 <label> Morada </label>
-                <input id="place" type="text" name="place" placeholder="Morada"required>
+                <input id="place" type="text" name="place" placeholder="Morada" title="Insira sua Morada" required>
                 <label> Data de Nascimento </label>
                 <input id="data" type="date"  placeholder="dd/mm/aaaa" required>
                 <label> Email </label>
-                <input type="email" name="email" placeholder="Email"required>
+                <input type="email" name="email" placeholder="Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                 <label> Password </label>
                 <input id="senha1" type="password" name="senha" placeholder="Password"required onfocus="this.value=''">
                 <label> Repita o Password </label>

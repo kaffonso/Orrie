@@ -2,8 +2,7 @@ body{
 	margin: 0;
 	font-family: futura;
 	line-height: 1.5;
-	background-color:white;}
-
+	background-image:url("../images/bg3.jpg");}
 nav{ 
 	background-color: rgba(0, 0, 0, 0.582);
 	color: white; 
@@ -103,7 +102,6 @@ nav{
 				transition: 0.3s;}
 				
 	.all{
-		background-image:url("../images/bg3.jpg");
 		display: flex;
 		justify-content: left;
 		padding-top: 10px;

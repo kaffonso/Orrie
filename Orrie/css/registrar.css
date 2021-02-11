@@ -63,7 +63,7 @@ body{
 
     .btns .registrar{
         float: right;
-        background-image: linear-gradient(to right, #c11e1e, rgb(160, 40, 40) );
+        background-color:teal;
         width: 20%;
         border: 0px;
         font-size: 12px;

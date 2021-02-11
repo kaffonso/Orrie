@@ -3,7 +3,8 @@ body{
 	margin: 0;
 	font-family: futura;
 	line-height: 1.5;
-	background-color:white; }
+	background-image:url("../images/bg3.jpg");
+}
 
 	nav{ 
 		background-color: rgba(0, 0, 0, 0.582);
@@ -101,7 +102,7 @@ body{
 	
 		.searchbox button{
 			font-family: futura;
-			width: 80px;
+			width: 100px;
 			padding-right: 10px;
 			margin-left: -10px;
 			background-color: brown;

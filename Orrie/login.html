@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
 
@@ -16,13 +17,18 @@
             </div>
             <div class="credenciais">
                 <label for="email"> Email </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email" required= "">
+                <input id="email" type="text" name="email" placeholder="Digite seu email" required="required" title="Insira o email">
 
                 <label for="psw"> Password </label>
-                <input id="psw" type="password" name="psw" placeholder="Digite seu password" required>
+                <input id="psw" type="password" name="psw" placeholder="Digite seu password" title="Insira o password">
+                <div class="mostrar">   
+                    <label> Mostrar password </label>
+                    <input type="checkbox" onclick="mostrar()">
+                </div>
             </div>
 
             <div class="btns">
+                
                 <p class="lemb">
                     <label><input checked="checked" type="checkbox"/> Lembre-me</label>
                 </p>
@@ -55,6 +61,15 @@
                alert('Credenciais inválidas')
                window.open("login.html","_self")
            }
+        }
+
+        function mostrar(){
+            var x = document.getElementById("psw");
+            if (x.type === "password") {
+            x.type = "text";
+            } else {
+            x.type = "password";
+            }
         }
     </script>
 </body>

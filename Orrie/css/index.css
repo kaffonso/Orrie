@@ -96,7 +96,7 @@ body{
 	.searchbox button{
 		cursor:pointer;
 		font-family: futura;
-		width: 80px;
+		width: 100px;
 		padding-right: 10px;
 		margin-left: -10px;
 		background-color: brown;

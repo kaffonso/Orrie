@@ -38,7 +38,7 @@ body{
     color: black;}
 
 .credenciais{
-    margin-bottom: 10px; }
+    margin-bottom: 0px; }
 
     .credenciais > label{
         font-size: 15px;
@@ -58,8 +58,14 @@ body{
         width: 97%;
         height: 25px; }
 
+    .mostrar{
+        float: right;
+        font-size: 11px;
+        margin: 0px;
+    }
+
 .btns{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
     .btns > button{

@@ -103,8 +103,75 @@ nav{
 				transition: 0.3s;}
 
 	.content{
-		width: auto;
-	}
+		margin-left: 50px;
+		margin-right: 50px;
+		padding-bottom: 40px;}
+
+		.box-avaliar{
+			display: flex;
+			margin-top: 35px;
+			margin-bottom: 20px;}
+		
+			.atual{
+				box-shadow: 1px 1px 5px rgba(109, 105, 105, 0.459);
+				border-radius: 10px;}
+				.atual > img{
+					border-radius: 15px;
+					width: 250px;
+					height: 250px;}
+		
+				.icons{ 
+					border-bottom-right-radius: 10px;
+					border-bottom-left-radius: 10px;
+					text-align: center;
+					width: 240px;
+					padding: 5px;
+					background-color: rgba(0, 0, 0, 0.452);
+					color: white;}
+
+			.avaliar{
+			margin-left: 30px;}
+		
+		.comentarios{
+					}
+		
+		.titulo-comentario{
+			text-align: center;
+		}	
+
+		.comentario{
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		.user{
+			margin-bottom: 10px;
+		}
+
+		.comment{
+			margin-left: 25px;
+		}
+
+		.estrelas{
+			color:orange;
+		}
+
+		h3{
+			font-size: 20px;
+		}
+		hr{
+			border: 0.5px solid grey;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width:100%;}
+			
+			.c{
+			border: 0.5px solid grey;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width:20%;
+			}
 
 footer{
 	background-color: darkred;
