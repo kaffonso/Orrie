@@ -7,8 +7,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <title>Registrar</title>
-
+    <title> Orrie </title>
     <link rel="stylesheet" href="css/registrar.css">
 </head>
 <body>
@@ -17,29 +16,39 @@
         <div class="caixa">
             <div class="titulo">
                 <h3>REGISTRAR</h3>
+                <hr class="line">
             </div>
+
             <div class="credenciais">
                 <label> Nome </label>
-                <input id="name" type="text" name="name" placeholder="Nome" title="Insira o primeiro nome" required> 
+                <input id="name" type="text" name="name" placeholder="Digite o primeiro nome" title="Digite o primeiro nome" required> 
                 <label> Apelido </label>
-                <input id="lname" type="text" name="lname" placeholder="Apelido" title="Insira o apelido" required>
+                <input id="lname" type="text" name="lname" placeholder="Digite o apelido" title="Digite o apelido" required>
                 <label> Morada </label>
-                <input id="place" type="text" name="place" placeholder="Morada" title="Insira sua Morada" required>
+                <input id="place" type="text" name="place" placeholder="Digite sua Morada" title="Digite sua morada" required>
                 <label> Data de Nascimento </label>
                 <input id="data" type="date"  placeholder="dd/mm/aaaa" required>
                 <label> Email </label>
-                <input type="email" name="email" placeholder="Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                <input type="email" name="email" placeholder="Digite o seu Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                 <label> Password </label>
-                <input id="senha1" type="password" name="senha" placeholder="Password"required onfocus="this.value=''">
+                <input id="senha1" type="password" name="senha" placeholder="Digite o seu Password"required ">
                 <label> Repita o Password </label>
-                <input id="senha2" type="password" name="senha" placeholder="Password"required onfocus="this.value=''">
+                <input id="senha2" type="password" name="senha" placeholder="Repita o Password"required '"><br>
             </div>
+
+            <div class="t-mostrar">
+                <label>Mostrar password</label>
+                <input type="checkbox" onclick="mostrar()">
+            </div>
+
             <p>Ao criar uma conta, você concorda com nossos <a href="#"> Termos e Privacidade. </a></p> 
+            
             <div class="btns">
                 <button type="submit" class="voltar" onclick="window.open('login.html','_self');">Voltar</button>
                 <button type="submit" class="registrar" onclick="verificar()"> Registrar</button>  
             </div>
         </div>
+
         <div class="b-title">
             <h1> ORRIE </h1>
             <p>Online Restaurant Reviews</p>
@@ -63,7 +72,20 @@
                 alert('Registro feito com sucesso!')
                 window.open("login.html","_self");
             } else {
-                alert('Senhas diferentes');
+                alert('Password diferentes! Certifique se colocou as passwords iguais!');
+            }
+        }
+    
+        function mostrar(){
+            var x = document.getElementById("senha1")
+			var y = document.getElementById("senha2")
+
+            if (x.type === "password"  ) {
+				x.type = "text"
+				y.type = "text"
+            } else {
+				x.type = "password"
+				y.type= "password"
             }
         }
     </script>

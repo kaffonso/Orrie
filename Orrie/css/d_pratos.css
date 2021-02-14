@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	font-family: futura;
 	line-height: 1.5;
-	background-color: white; }
+	background-image:url("../images/bg3.jpg"); }
 
 nav{ 
 	background-color: rgba(0, 0, 0, 0.582);
@@ -47,18 +47,18 @@ nav{
 		padding-right: 5px;}
 
 		.Head{
-		height: 35px;
-		font-size: 30px;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		margin-top: 0px; }
+			height: 35px;
+			font-size: 30px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-top: 0px; }
 
 		.subHead{
-		font-size: 6px; 
-		margin-top: 0px;
-		margin-bottom: 0px;
-		margin-left: 1px;
-		letter-spacing: 0.1px; }
+			font-size: 6px; 
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-left: 1px;
+			letter-spacing: 0.1px; }
 
 	.titulo{
 		box-shadow: 1px 1px 5px black;
@@ -89,8 +89,8 @@ nav{
 		.buttons a{
 			margin-right: 2px;
 			font-size: 18px;
-			padding-right: 135px;
-			padding-left: 135px;
+			padding-left: 11%;
+			padding-right: 11%;
 			padding-bottom: 7px;
 			padding-top: 6px;
 			background-color:rgb(150,5,3);;
@@ -103,8 +103,59 @@ nav{
 				transition: 0.3s;}
 
 	.content{
-		width: auto;
-	}
+		margin-top: 15px;
+		width: auto;}
+
+		.box{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 20px;}
+
+			.box-prts{
+				cursor:default;
+        		user-select: none;
+       			-webkit-user-select: none;
+				vertical-align: middle;
+				background-color:white;
+				box-shadow: 1px 1px 5px rgb(128, 122, 122);
+				border-radius: 15px;
+				width: 26.4%;
+				margin: 20px;
+				padding: 20px;
+				transition: 0.5s ease;}
+
+				.box-prts:hover{
+					transform:scaleX(1.02)scaleY(1.02);
+					transition: 0.5s ease;
+				}
+
+				.box-prts-tipo{
+					text-transform: uppercase;
+					font-size: 14.5px;
+					text-align: center;
+					letter-spacing: 2px;}
+				
+
+				ul {
+					list-style-type: none;
+					margin: 0;
+					margin-left: 40px;
+					padding: 0;}
+
+				li{
+					padding: 5px;
+					transition: 0.6s;
+					margin-right: 40px;}
+
+					li:hover{
+						background-color:teal;
+						color: white;
+						transition: 0.2s;}
+				span{
+					float: right;}
+
+				
 
 footer{
 	background-color: darkred;
@@ -118,13 +169,10 @@ footer{
 		text-align: center;
 		font-size: 18px;
 		line-height: 1.6;
-		margin-bottom: 0;
-
-	}
+		margin-bottom: 0;}
 
 	footer li{
-		display: inline-block;
-	}
+		display: inline-block;}
 
 	footer .roda li a{
 		padding-bottom: 0%;

@@ -1,8 +1,7 @@
 body{
-    background-image: url("/Users/kafonso/Desktop/Orrie/images/bg.png");
+    background-image: url("../images/bg.png");
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-family: futura;
-}
+    font-family: futura;}
 
 .conteiner{
     display: grid;
@@ -10,116 +9,126 @@ body{
     color: white;
     width: 100%;}
 
-    .titulo img{
-        margin-top: 40px;
-        margin-bottom: 0px;
-        width: 15%; }
-
-    .titulo h3{
-        margin-top: 5px;
-        letter-spacing: 2px; }
-
-.caixa{
-    font-family: Arial, Helvetica, sans-serif; 
-    float: left;
-    box-shadow: 1px 1px 5px #cccccc ;
-    background-color: white;
-    margin: 0px;
-    margin-top: 13%;
-    margin-right: 8%;
-    margin-left: 10%;
-    padding: 30px;
-    padding-top: 0px;
-    border-radius: 20px;
-    width: 25%;}
+    .caixa{
+        font-family: Arial, Helvetica, sans-serif; 
+        float: left;
+        box-shadow: 1px 1px 5px #cccccc ;
+        background-color: white;
+        margin: 0px;
+        margin-top: 11%;
+        margin-right: 8%;
+        margin-left: 10%;
+        padding: 30px;
+        padding-top: 0px;
+        border-radius: 20px;
+        width: 25%;}
 
     .caixa .titulo{
-    text-align: center;
-    color: black;}
-
-.credenciais{
-    margin-bottom: 0px; }
-
-    .credenciais > label{
-        font-size: 15px;
-        padding-left: 5px;
-        margin-top: 7px;
-        margin-bottom: 5px;
-        color: black;
-        display: block; }
-
-    .credenciais > input{
-        border: 1px solid #ccc;
-        padding: 2px 10px;
-        padding-right: 0px;
-        margin-bottom: 5px;
-        border-radius: 10px;
-        outline: 0;
-        width: 97%;
-        height: 25px; }
-
-    .mostrar{
-        float: right;
-        font-size: 11px;
-        margin: 0px;
-    }
-
-.btns{
-    margin-top: 30px;
-}
-
-    .btns > button{
-        float: right;
-        width: 20%;
-        border: 0px;
-        border-radius: 30px;
-        padding: 5px;
-        color: white;
-        outline: 0;}
-
-    .btns .lemb{
-        vertical-align: middle;
-        float: left;
-        font-size: 11px;
-        padding: 0px;
-        margin: 0px;
         text-align: center;
-        text-decoration-style: underline ;}
-        
-   .btns .registrar{
-        float: right;
-        width: 20%;
-        font-size: 10px;
-        border-radius: 30px;
-        margin-left: 10px;
-        color: white;
-        border: 0px;
-        outline: 0; 
-        background-color: grey;
-        cursor: pointer;}
+        color: black;}
 
-        
-        .btns .registrar:hover{
-            background-color:darkgray;
-        }
+        .titulo img{
+            margin-top: 40px;
+            margin-bottom: 0px;
+            width: 20%; }
+    
+        .titulo h3{
+            letter-spacing: 2px;
+            margin-bottom: 10px; }
+    
+            .line{
+                border: 0.5px solid grey;
+                margin-top: 0px;
+                width: 30%;}
 
-    .btns .esqueceu{
-        float:right;
-        font-size: 10px;
-        width: 40%;
-        border-radius: 30px;
-        background-color: white;
-        color: black;
-        border: 0px;
-        outline: 0; 
-        cursor: help;} 
+        .credenciais{
+            margin-bottom: 0px; }
+
+            .credenciais > label{
+                font-family: futura;
+                font-size: 15px;
+                padding-left: 5px;
+                margin-top: 7px;
+                margin-bottom: 5px;
+                color: black;
+                display: block; }
+
+            .credenciais > input{
+                border: 1px solid #ccc;
+                padding: 2px 10px;
+                padding-right: 8px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+                font-size: 12px;
+                outline: 0;
+                width: 94%;
+                height: 25px; }
+
+            .mostrar{
+                font-family: futura;
+                float: right;
+                font-size: 12px;
+                padding-top: 3px;
+                margin: 0px;}
+
+        .btns{
+            margin-top: 30px;}
+
+            .btns > button{
+                font-family: futura;
+                float: right;
+                width: 20%;
+                border: 0px;
+                border-radius: 30px;
+                padding: 5px;
+                color: white;
+                outline: 0;}
+
+            .btns .lemb{
+                font-family: futura;
+                vertical-align: middle;
+                float: left;
+                font-size: 13px;
+                padding: 0px;
+                margin: 0px;
+                margin-top: 5px;
+                text-align: center;
+                text-decoration-style: underline ;}
+            
+            .btns .registrar{
+                float: right;
+                width: 20%;
+                font-size: 12px;
+                border-radius: 10px;
+                margin-left: 10px;
+                color: white;
+                border: 0px;
+                outline: 0; 
+                background-color: grey;
+                cursor: pointer;}
         
-    .btns-login #login{
+                .btns .registrar:hover{
+                background-color:teal;
+                transition:0.3s ease-out; }
+
+            .btns .esqueceu{
+                float:right;
+                font-size: 12px;
+                width: 40%;
+                border-radius: 10px;
+                background-color: grey;
+                color: white;
+                border: 0px;
+                outline: 0; 
+                cursor: pointer;} 
+            
+        .btns-login #login{
         background-image: linear-gradient(to right, #c11e1e, rgb(160, 40, 40) );
+        font-family: futura;
         width: 100%;
-        font-size: 13px;
+        font-size: 15px;
         height: 40px;;
-        border-radius: 30px;
+        border-radius: 15px;
         padding: 5px;
         color: white;
         border: 0px;
@@ -127,25 +136,26 @@ body{
         margin-top: 15px; 
         cursor: pointer;}
 
-.b-title{
-    padding-top: 18%;
-    color: white;
-    vertical-align: middle;
-    margin-left: 100px;}
+    .b-title{
+        cursor:default;
+        user-select: none;
+        -webkit-user-select: none;
+        padding-top: 18%;
+        color: white;
+        vertical-align: middle;
+        margin-left: 100px;}
 
-    .b-title h1,p{
-        margin: 0px;
-    }
-    .b-title h1{
-        height: 170px;
-        font-size: 10em;
-    }
+        .b-title h1,p{
+            margin: 0px;}
 
-    .b-title p{
-        font-size: 1.3em;
-        letter-spacing: 10px;
-        padding-left: 590px;
-    }
+        .b-title h1{
+            height: 170px;
+            font-size: 10em;}
+
+        .b-title p{
+            font-size: 1.3em;
+            letter-spacing: 10px;
+            padding-left: 590px;}
 
 
 

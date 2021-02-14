@@ -3,10 +3,9 @@ body{
 	margin: 0;
 	font-family: futura;
 	line-height: 1.5;
-	background-image:url("../images/bg3.jpg");
-}
+	background-image:url("../images/bg3.jpg");}
 
-	nav{ 
+nav{ 
 		background-color: rgba(0, 0, 0, 0.582);
 		color: white; 
 		z-index: 1;
@@ -16,10 +15,10 @@ body{
 		height: 53px;
 		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521); }
 
-		.menu{
+	.menu{
 			float: right; }
 		
-				.menu a{
+		.menu a{
 					padding-left: 5px;
 					float: left;
 					padding-right: 5px;
@@ -30,19 +29,19 @@ body{
 					color: white;
 					transition:0.8s; }
 		
-					.menu a:hover{
+			.menu a:hover{
 					background-color: rgba(0, 20, 0, 0.48);
 					transition: 0.1s; 
 					border-bottom: 3px solid white;
 					transform: scaleX(1.05)}
 
-					.menu a:last-child{
+			.menu a:last-child{
 					padding-right: 30px; }
 
-					.active{
+			.active{
 					border-bottom:3px solid white;}
 
-	 #logo{
+	#logo{
 		cursor:pointer;
 		position: fixed;
 		float: left;
@@ -129,29 +128,26 @@ body{
 			margin: 0;
 			margin-left: 10px;}	
 
-		.result1 p{
-			text-align: left;
-			margin-left: 10px;
-		}
-
 		.icons{
-			margin-left: 10px;
-		}
+			margin-left: 10px;}
 
-		.result1{
+	.result1{
 			display: flex;
 			align-items: center;	}
 		
-			.result1 img{
+		.result1 img{
 				border-radius: 15px;
 				margin-left: 50px;
 				width: 150px;
 				height: 150px;
 				box-shadow: 0.5px 0.5px 6px rgb(194, 189, 189); }
 
-				#x{
-					display: none;
-				}
+		.result1 p{
+				text-align: left;
+				margin-left: 10px;}
+
+	#x{
+					display: none;}
 			
 	hr{
 		border: 0.5px solid grey;
@@ -159,16 +155,15 @@ body{
 		margin-bottom: 20px;
 		width:93%;}
 	
-		#outros1{
+	#outros1{
 			padding-top: 0px;
 			padding-bottom: 0px;
-			border-right: 1px solid grey;
-			}
+			border-right: 1px solid grey;}
 
-			#outros1:last-child{
+		#outros1:last-child{
 				border-right: none;}
-			
-			#outros1 img{
+		
+		#outros1 img{
 				border-radius: 15px;
 				margin-left: 1px;
 				width: 150px;
@@ -184,17 +179,15 @@ body{
 			margin-left: 50px;}
 		
 		#outros1 p{
-			margin-left: 0px;
-		}
+			margin-left: 0px;}
 	
 	.outros{
 		display: flex;
-		justify-content: center;
-	}
+		justify-content: center;}
+
 		#outros1 img:hover{
 			transform: scaleX(1.05) scaleY(1.05);
-			transition: 0.5s;
-		}
+			transition: 0.5s;}
 
 footer{
 	text-align: center;

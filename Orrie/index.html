@@ -16,9 +16,9 @@
 
 			<div class="menu">
 				<a href="index.html" class="active"><i class="fas fa-home"></i> Home </a>
-				<a href=""><i class="fas fa-user"></i> Conta </a>
+				<a href="conta.html"><i class="fas fa-user"></i> Conta </a>
 				<a href="definition.html"><i class="fas fa-cogs"></i> Definições </a>
-				<a href="login.html" onclick="confirm('Sair?')"><i class="fas fa-sign-in-alt"></i> Sair </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) ; return false"><i class="fas fa-sign-in-alt"></i> Sair </a>
 			</div>
 		</nav> 
 		
@@ -67,7 +67,7 @@
 				</div>
 				
 				<div class="box">
-					<a href="#"> 
+					<a href="d_geral-2.html"> 
 						<p> Pizza Art </p> 
 						<img src="images/Restaurantes/pizzart.jpg">
 						<p class="rate">Rate 4.3/5</p> 
@@ -75,6 +75,7 @@
 				</div>
 			</div>
 		</div>
+
 		<footer class="rodape">
 				<div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
 				<ul class="roda">
@@ -99,6 +100,9 @@
 			if (x === "mindel") {
 				window.open("search.html","_self");
 
+			}else if(x==="alecrim"){
+				window.open("search_local.html","_self");
+			
 			}else{
 				alert("Restaurante ou localidade não encontrado!")
 				window.open("index.html","_self");

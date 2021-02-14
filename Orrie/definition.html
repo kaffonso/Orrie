@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/definition.css">
+	<link rel="stylesheet" type="text/css" href="css/def.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
 </head>
 <body>	
@@ -15,15 +15,16 @@
 
 			<div class="menu">
 				<a href="index.html"><i class="fas fa-home"></i> Home </a>
-				<a href=""><i class="fas fa-user"></i> Conta </a>
+				<a href="conta.html"><i class="fas fa-user"></i> Conta </a>
 				<a href="definition.html" class="active"><i class="fas fa-cogs"></i> Definições </a>
-				<a href="login.html" onclick="confirm('Sair?')"><i class="fas fa-sign-out-alt"></i> Sair </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) ; return false"><i class="fas fa-sign-out-alt"></i> Sair </a>
 			</div>
 		</nav> 
 
 	<div class="conteiner">
 		<div class="titulo">
-			<p> DEFINIÇÕES </p>
+			<p class="voltar"onclick="window.open('index.html','_self')" > VOLTAR </p>
+			<p class="big-t"> DEFINIÇÕES </p>
 		</div>
 
 		<div class="btns">
