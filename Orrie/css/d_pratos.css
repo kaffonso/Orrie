@@ -115,15 +115,46 @@ nav{
 			.box-prts{
 				cursor:default;
         		user-select: none;
+				color: white;
        			-webkit-user-select: none;
 				vertical-align: middle;
-				background-color:white;
 				box-shadow: 1px 1px 5px rgb(128, 122, 122);
 				border-radius: 15px;
 				width: 26.4%;
 				margin: 20px;
 				padding: 20px;
 				transition: 0.5s ease;}
+
+				#pizza {
+					background: url(../images/foods/bg-pizza.jpg) rgba(0, 0, 0, 0.582);
+					background-blend-mode: multiply;
+					background-size:cover;}
+
+				#shawarma{
+					background: url(../images/foods/bg-shawarma.png) rgba(0, 0, 0, 0.582);
+					background-blend-mode: multiply;
+					background-size:cover;}
+
+				#sanduiches{
+					background: url(../images/foods/bg-sanduiches.jpg) rgba(0, 0, 0, 0.582);
+					background-blend-mode: multiply;
+					background-size:cover;}
+
+				#bebidas{
+					background: url(../images/foods/bg-bebidas.jpg) rgba(0, 0, 0, 0.582);
+					background-blend-mode: multiply;
+					background-size:unset;}
+
+				#omoletes{
+					background: url(../images/foods/bg-omelete.jpg) rgba(0, 0, 0, 0.582);
+					background-blend-mode: multiply;
+					background-size:cover;}
+
+				#carne{
+					background: url(../images/foods/bg-carne.jpg) rgba(0, 0, 0, 0.582);
+					background-blend-mode: multiply;
+					background-size:cover;}
+				
 
 				.box-prts:hover{
 					transform:scaleX(1.02)scaleY(1.02);

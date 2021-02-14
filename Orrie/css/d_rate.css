@@ -200,10 +200,10 @@ nav{
 				display: none; }
 
 		hr{
-	border: 0.5px solid grey;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width:100%;}	
+			border: 0.5px solid grey;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width:100%;}	
 
 footer{
 	background-color: darkred;
