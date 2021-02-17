@@ -230,7 +230,8 @@ hr{
 		.all{
 			display: flex;
 			justify-content: center;
-			width: 110%;
+			margin-left: 50px;
+			margin-right: 50px;
 		}
 
 		.info{
