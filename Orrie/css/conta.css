@@ -11,6 +11,7 @@ nav{
 	width: 100%;
 	position: fixed;
 	top: 0px;
+	z-index: 2;
 	height: 53px;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521); }
 
@@ -74,6 +75,7 @@ nav{
 				color: black;
 				display: flex;
 				position: absolute;
+				z-index: 1;
 				margin: 0px 0px 0px 35px;
 				padding: 10px;
 				top: 80px;
@@ -81,6 +83,7 @@ nav{
 			
 				.profile-pic img{
 					background-color: white;
+					z-index: -1px;
 					padding: 2px;
 					color: black;
 					margin: 5px;
@@ -96,6 +99,10 @@ nav{
 					margin-left:10px;
 					margin-bottom: 0px;
 					padding: 0px;}
+				
+					.morada{
+						margin-left:10px;
+					}
 
 				hr{
 					border: 0.5px solid black;

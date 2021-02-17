@@ -9,6 +9,7 @@ nav{
 	color: white; 
 	width: 100%;
 	position: fixed;
+	z-index: 5;
 	top: 0px;
 	height: 53px;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);}
@@ -120,7 +121,7 @@ nav{
 				vertical-align: middle;
 				box-shadow: 1px 1px 5px rgb(128, 122, 122);
 				border-radius: 15px;
-				width: 26.4%;
+				width: 380px;
 				margin: 20px;
 				padding: 20px;
 				transition: 0.5s ease;}
@@ -159,6 +160,7 @@ nav{
 				.box-prts:hover{
 					transform:scaleX(1.02)scaleY(1.02);
 					transition: 0.5s ease;
+					z-index: 1;
 				}
 
 				.box-prts-tipo{

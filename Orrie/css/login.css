@@ -4,8 +4,8 @@ body{
     font-family: futura;}
 
 .conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap-reverse; 
     color: white;
     width: 100%;}
 

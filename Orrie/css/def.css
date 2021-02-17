@@ -84,6 +84,31 @@ nav{
 	.btns{
 		text-align :center; }
 
+	.feedback{
+		display: flex;
+		justify-content: center;}
+
+		textarea{
+			font-size: 14px;
+			border-radius: 15px;
+			padding: 20px;
+			resize: none;
+			border:1px solid white;}
+
+		.feddback-btn{
+			outline: none;
+			box-shadow: 1px 1px 5px rgba(109, 105, 105, 0.459);
+			float:right;
+			color:white;
+			font-size: 14px;
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+			margin-top: 5px;
+			background-color: teal;
+			transition: 0.5s;
+			cursor: pointer; }
+
 	.t-btns{
 		margin: 10px 10px 5px 150px;
 		text-align: left;

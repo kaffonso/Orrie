@@ -110,6 +110,7 @@ nav{
 
 		.box-avaliar{
 			display: flex;
+			flex-wrap: wrap;
 			margin-top: 35px;
 			margin-bottom: 20px;}
 		
@@ -205,3 +206,27 @@ nav{
 			margin-bottom: 20px;
 			width:100%;}	
 
+@media screen and (max-width: 900px){
+	.atual{
+			margin-left: 28%;
+
+		}
+	
+	.avaliar{
+		margin: 30px 20px 0px 0px;
+	}
+
+	textarea{
+		width: 100%;
+	}				
+}
+
+@media screen and (max-width: 1200px){
+	.avaliar{
+		margin: 30px 20px 0px 0px;
+	}
+
+	textarea{
+		width: 100%;
+	}				
+}
