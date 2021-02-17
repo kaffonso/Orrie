@@ -1,0 +1,179 @@
+body{
+	width: 100%;
+	margin: 0;
+	font-family: futura;
+	line-height: 1.5;
+	background-color: rgb(150,5,3);}
+
+nav{ 
+	background-image:url(../images/nave.jpg);
+	color: white; 
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	height: 53px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1); }
+	
+	.menu{
+		float: right; }
+		
+		.menu a{
+			padding-left: 5px;
+			float: left;
+			padding-right: 5px;
+			padding-bottom: 12px;
+			margin: 0px;
+			padding-top: 14.5px;
+			text-decoration: none;				
+			color: white;
+			transition:0.8s; }
+
+			.menu a:hover{
+				background-color: rgba(0, 20, 0, 0.48);
+				transition: 0.1s;
+				padding-bottom: 12px; 
+				border-bottom: 3px solid white;
+				transform: scaleX(1.05)}
+	
+			.menu a:last-child{
+				padding-right: 30px; }
+
+			.active{
+				border-bottom:3px solid white; }
+	
+	.logo{
+		cursor: pointer;
+		float: left;
+		padding-left: 15px; 
+		padding-right: 5px;}
+	
+		.Head{
+			height: 35px;
+			font-size: 30px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-top: 0px; }
+		
+		.subHead{
+			font-size: 6px; 
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-left: 1px;
+			letter-spacing: 0.1px; }
+	
+.conteiner{
+	margin-top: 10%;}
+
+	.titulo{
+		display: block;
+		margin-left: 150px;
+		width: 78%;
+		text-align: center;
+		font-size: 30px;
+		font-family: "futura";
+		color: white ;}
+
+	.voltar{
+		text-decoration: underline;
+		user-select: none;
+		-webkit-user-select: none;
+		cursor: pointer;
+		font-size: 16px;
+		float: left;}
+
+	.btns{
+		text-align :center; }
+
+	.feedback{
+		display: flex;
+		justify-content: center;}
+
+		textarea{
+			font-size: 14px;
+			border-radius: 15px;
+			padding: 20px;
+			resize: none;
+			border:1px solid white;}
+
+		.feddback-btn{
+			outline: none;
+			box-shadow: 1px 1px 5px rgba(109, 105, 105, 0.459);
+			float:right;
+			color:white;
+			font-size: 14px;
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+			margin-top: 5px;
+			background-color: teal;
+			transition: 0.5s;
+			cursor: pointer; }
+
+	.t-btns{
+		margin: 10px 10px 5px 150px;
+		text-align: left;
+		font-size: 20px;
+		color: white;}
+
+	.t-alterar{
+		font-weight: bolder;
+		margin:0px 0px 5px 0px;}
+
+	hr{
+		border: 1px solid white;
+		width: 79%;}
+
+	.hr-black{
+		border: 0.5px solid rgb(53, 49, 49);
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 10px;}
+
+	.botao{
+		outline: none;
+		cursor: pointer;
+		font-family: "futura";
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin:5px;
+		width: 80%;
+		text-align: left;
+		font-size: 18px;
+		border-radius: 15px;
+		color:rgb(53, 49, 49);
+		background-color: white;
+		border:0px; }
+
+	.change_name,.change_place,.change_password{
+		display: none;
+		text-align: left;
+		margin-left: 13%;
+		transition: 1s all ease;
+		margin-right: 13%;
+		color: black;
+		padding: 8px 20px 20px 20px;
+		background-color: white;
+		border-radius: 0px 0px 15px 15px;
+		margin-bottom: 10px;}
+
+	.input-alterar{
+		width: 50%;
+		font-size: 14px;
+		height: 100%;
+		margin: 5px 0px 5px 0px;
+		padding: 8px 10px 8px 10px;
+		border-radius: 5px;
+		border: 1px solid rgb(179, 164, 164);}
+
+	.btn-alterar{
+		outline: none;
+		font-family: futura;
+		font-size: 14px;
+		color: white;
+		width: 20%;
+		margin-left: 5px;
+		padding: 9px 10px 8px 10px;
+		background-color: teal;
+		border-radius: 5px;
+		border: 0;}

@@ -23,14 +23,15 @@
 
 	<div class="conteiner">
 		<div class="titulo">
-			<p class="voltar"onclick="window.open('index.html','_self')" > VOLTAR </p>
-			<p class="big-t"> DEFINIÇÕES </p>
+			<p class="voltar"onclick="window.open('definition.html','_self')" > VOLTAR </p>
+			<p class="big-t"> FEEDBACK </p>
 		</div>
 
-		<div class="btns">
-			<button class="botao" onclick="window.open('def_conta.html','_self')"> Conta </button>
-			<button class="botao" onclick="window.open('feedback.html','_self')"> Feedback </button>
-			<button class="botao"> Ajuda </button>
+		<div class="feedback">
+			<form method="GET">
+				<textarea rows="20" cols="120" placeholder="Escreva um feedback sobre o site"></textarea><br>
+				<button class="feddback-btn" type="submit" onclick="alert('Obrigado(a) pelo feedback!')"> Submeter Feedback</button>
+			</form>
 		</div>
 	</div>
 </body>
