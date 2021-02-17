@@ -117,10 +117,10 @@ nav{
 			font-size: 2em;	}
 
 		.dest-box{
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			grid-column-gap: 0px; 
-			width: 80%;
+			display: flex; 
+			flex-wrap: wrap;
+			width: 100%;
+			justify-content: center;
 			margin: 0 auto;}
 
 			.dest-box a{
@@ -135,6 +135,7 @@ nav{
 
 			.dest-box img{
 				box-shadow: 0.5px 0.5px 6px rgb(194, 189, 189);
+				margin: 15px;
 				width: 200px;
 				height: 200px;
 				border-radius: 5%;
@@ -148,4 +149,3 @@ nav{
 				.dest-box .box:hover{
 					transform: scaleX(1.08) scaleY(1.08);
 					transition: 0.5s; }
-
