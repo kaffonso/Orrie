@@ -242,6 +242,10 @@ hr{
 		.content{
 			margin: 40px 10px;
 			width: 450px;
-			height: 500px;
+			height: 380px;
 		}
+		.full{
+			height: 80%;
+		}
+		
 	}
