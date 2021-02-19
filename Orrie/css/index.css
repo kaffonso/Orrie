@@ -10,12 +10,14 @@ nav{
 	color: white; 
 	width: 100%;
 	position: fixed;
+	display: flex;
+	justify-content: space-between;
 	top: 0px;
 	height: 53px;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521); }
 
 	.menu{
-		float: right; }
+		 }
 
 		.menu a{
 			padding-left: 5px;
@@ -43,7 +45,6 @@ nav{
 
 	.logo{
 		cursor:pointer;
-		float: left;
 		padding-left: 15px; 
 		padding-right: 5px;}
 
