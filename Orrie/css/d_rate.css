@@ -61,12 +61,10 @@ body{
 			display: none; }	
 
 			.atual{
-				flex: 1;
 				box-shadow: 1px 1px 5px rgba(109, 105, 105, 0.459);
 				border-radius: 15px;}
 
 				.atual > img{
-					flex: ;
 					border-radius: 15px 15px 0px 0px;
 					width: 250px;
 					height: 250px;}
@@ -90,6 +88,7 @@ body{
 					border-radius: 15px;
 					margin-top: -8px;
 					resize: none;
+					width: 98%;
 					padding: 10px;
 					font-family: futura;
 					font-size: 14px; }
