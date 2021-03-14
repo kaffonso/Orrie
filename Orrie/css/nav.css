@@ -1,5 +1,15 @@
-nav{ 
+@font-face {
+	font-family: futurB;
+	src: url(../font/Futura\ Heavy\ font.ttf) format('truetype');
+  }
+
+  @font-face {
+	font-family: futur;
+	src: url(../font/futura.ttf) format('truetype');}
+
+	nav{ 
 	display: flex;
+	font-family: futur;
 	-webkit-backdrop-filter: blur(0.5rem);
 	justify-content: space-between;
 	position: fixed;
