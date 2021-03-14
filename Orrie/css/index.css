@@ -21,7 +21,7 @@ body{
 		background-image: url(../images/bg.png);
 		text-align: center;
 		width: 100%;
-		overflow: scroll;
+		overflow: hidden;
 		color: white;
 		overflow: none;
 		font-weight: bold;
