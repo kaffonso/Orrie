@@ -44,7 +44,7 @@ body{
 			font-family: futura;
 			width: 100px;
 			padding-right: 10px;
-			margin-left: -10px;
+			margin-left: -6px;
 			background-color: rgba(180, 9, 9, 0.4);
 			border: 1px solid white;
 			-webkit-backdrop-filter: blur(1rem);
