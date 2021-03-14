@@ -1,3 +1,13 @@
+@font-face {
+	font-family: futurB;
+	src: url(/Orrie//font/Futura\ Heavy\ font.ttf) format('truetype');
+  }
+
+  @font-face {
+	font-family: futur;
+	src: url(/Orrie//font/futura.ttf) format('truetype');
+  }
+
 body{
 	width: 100%;
 	margin: 0;
@@ -14,7 +24,8 @@ body{
 		overflow: scroll;
 		color: white;
 		overflow: none;
-		font-family: futura;
+		font-weight: bold;
+		font-family: futurB;
 		padding-bottom: 65px;
 		box-shadow: 1px 1px 5px rgba(0,0,0,0.1);}
 
@@ -32,7 +43,7 @@ body{
 		.searchbox input{
 			padding-left: 10px;
 			padding-right: 10px;
-			font-family: futura;
+			font-family: futur;
 			outline: none;
 			width: 450px;
 			border-bottom-right-radius: 0px;
@@ -41,14 +52,15 @@ body{
 
 		.searchbox button{
 			cursor:pointer;
-			font-family: futura;
+			font-family: futur;
 			width: 100px;
 			padding-right: 10px;
-			margin-left: -6px;
+			margin-left: -7px;
 			background-color: rgba(180, 9, 9, 0.4);
 			border: 1px solid white;
 			-webkit-backdrop-filter: blur(1rem);
 			color: white;
+			padding-bottom: 1px;
 			border-bottom-left-radius: 0px;
 			border-top-left-radius: 0px;
 			font-size: 14px; }
