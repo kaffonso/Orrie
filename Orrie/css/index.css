@@ -69,6 +69,7 @@ body{
 		background-color: white;
 		color:rgb(36, 35, 35);
 		width: 100%;
+		font-family: futurB;
 		padding-top: 20px;
 		padding-bottom: 73px;
 		text-align: center; }
@@ -85,12 +86,13 @@ body{
 			margin: 0 auto;}
 
 			.dest-box a{
-				font-family:'Helvetica Neue';
+				font-family:futur;
 				text-decoration: none; }
 
 			.dest-box .box > a > p{
 				font-size: 18px;
 				font-weight: bold;
+				font-family: futur;
 				margin: 5px;
 				color:rgb(53, 52, 52);}
 
@@ -112,6 +114,7 @@ body{
 					transition: 0.5s; }
 
 footer{
+	font-family: futur;
 	text-align: center;
 	background: url(../images/bg.png);
 	color: white; 
