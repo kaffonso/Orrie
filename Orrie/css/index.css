@@ -1,11 +1,11 @@
 @font-face {
 	font-family: futurB;
-	src: url(/Orrie/font/Futura\ Heavy\ font.ttf) format('truetype');
+	src: url(../font/Futura\ Heavy\ font.ttf) format('truetype');
   }
 
   @font-face {
 	font-family: futur;
-	src: url(/Orrie/font/futura.ttf) format('truetype');
+	src: url(../font/futura.ttf) format('truetype');
   }
 
 body{
